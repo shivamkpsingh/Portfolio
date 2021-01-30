@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color:#03ddf3eb;
+    display: flex;
+    position: relative;
+    height: 72px;
+}
+.logo img{
+    height: 65px;
+    margin-left: 30px;
+}
+.logo h1{
+    margin: 15px 28px;
+}
+.logo h1 b {
+    color:#c602e9 ;
+} 
+.navbar   {
+    display: flex;
+}
+.navbar ul {
+    display: flex;
+    margin-left: 871px;
+    list-style: none;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.navbar ul li a{
+    margin: 13px;
+    padding: 9px;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+.navbar ul li a:hover{
+    background-color: #c602e9;
+    color:white;
+    border-radius: 15px;
+}
+.profile{
+    background: url(./img/two.jpg) no-repeat center center/cover;
+    background-color: #c0b1b19e;
+    height: 480px;
+}
+.intro{
+    display: flex;
+    justify-content: space-around;
+}
+.para{
+    margin-top: 98px;
+    font-weight: bold;
+}
+#first{
+    color: white;
+}
+#second{
+    font-weight: bold;
+    font-size: 33px;
+    color: white;
+}
+#third{
+    color: white;
+}
+strong{
+    color:#c602e9 ;
+    font-size: 26px;
+}
+.btn{
+    background-color: violet;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 22px -4px;
+    padding:8px 60px;
+    border-radius: 13px;
+    box-shadow: 0px 0px 10px #a94ae5;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rebeccapurple;
+    color: white;
+}
+.about{
+    background-color:black;
+    color: white;
+    height: 600px;
+    
+}
+
+.Title{
+    display: flex;
+}
+.about img{
+    width:49%;
+    height:64%;
+    margin:106px 117px;
+}
+.section-title{
+    margin:45px 29px;
+
+}
+.section-title h1{
+width: 200px;
+}
+.section-title h5{
+       margin: 0px 30px;
+       color:#c602e9;
+}
+.about-me{
+    margin-top:151px;
+    margin-right:136px;
+}
+.about-me h1{
+    font-size: 27px;
+}
+.about-me h1 b{
+    color:#c602e9;
+}
+.about-me p{
+    width: 528px;
+}
+.education{
+    height:550px;
+    background: url(./img/two.jpg) no-repeat center center/cover;
+    /* background: url(); */
+    color: white;
+    display: flex;
+    justify-content:space-around;
+}
+
+.X{
+    margin-top: 132px;
+}
+.X h1{
+    font-size: 23px;
+}
+.X p{
+    padding: 10px 0px;
+    font-weight: bold;
+}
+.XII{
+    margin-top: 132px
+}
+.XII h1{
+    font-size: 23px;
+}
+.XII p{
+    padding: 10px 0px;
+    font-weight: bold;
+}
+.graduation{
+    margin-top: 123px;
+}
+.graduation h1{
+    padding: 10px;
+    font-size: 23px;
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
