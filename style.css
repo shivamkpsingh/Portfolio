@@ -2,18 +2,23 @@
     padding: 0;
     margin: 0;
 }
+body{
+    width: 100%;
+
+}
 header{
     background-color:#03ddf3eb;
     display: flex;
-    position: relative;
+    /* position: relative; */
     height: 72px;
+    
 }
 .logo img{
     height: 65px;
     margin-left: 30px;
 }
 .logo h1{
-    margin: 15px 28px;
+    margin: 9px 28px;
 }
 .logo h1 b {
     color:#c602e9 ;
@@ -25,12 +30,12 @@ header{
     display: flex;
     margin-left: 871px;
     list-style: none;
-    font-size: 25px;
     margin-top: 20px;
 }
 .navbar ul li a{
-    margin: 13px;
     padding: 9px;
+    margin:0px 10px;
+    font-size: 25px;
     text-decoration: none;
     color:black;
     font-weight: bold;
@@ -38,7 +43,7 @@ header{
 .navbar ul li a:hover{
     background-color: #c602e9;
     color:white;
-    border-radius: 15px;
+    border-radius: 9px;
 }
 .profile{
     background: url(./img/two.jpg) no-repeat center center/cover;
@@ -88,7 +93,6 @@ strong{
     height: 600px;
     
 }
-
 .Title{
     display: flex;
 }
@@ -159,9 +163,48 @@ width: 200px;
     font-size: 22px;
 }
 
+.service{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    background-color: black;
+    color: white;
+    height: 550px;
+}
+.hello{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    /* margin: 30px 0px ; */
+    text-align: center;
+}
+.hello h1{
+    margin: 30px 0px 0px 0px;
+}
+.hello h5{
+    color: violet;
+}
 
-
-
+#service-box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+.box{
+    height: 190px;
+    width: 290px;
+    box-shadow: 0px 0px 10px violet;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.box i{
+    color: violet;
+}
+.box i,h1,p{
+    padding: 8px;
+}
 
 
 
