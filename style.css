@@ -125,48 +125,23 @@ width: 200px;
 .about-me p{
     width: 528px;
 }
-.education{
+.study{
     height:550px;
     background: url(./img/two.jpg) no-repeat center center/cover;
     /* background: url(); */
     color: white;
-    display: flex;
-    justify-content:space-around;
 }
 
-.X{
-    margin-top: 132px;
+#education{
+    display: flex;
+    justify-content: space-around;
 }
-.X h1{
-    font-size: 23px;
-}
-.X p{
-    padding: 10px 0px;
+.learnig{
+    margin-top: 90px;
     font-weight: bold;
-}
-.XII{
-    margin-top: 132px
-}
-.XII h1{
-    font-size: 23px;
-}
-.XII p{
-    padding: 10px 0px;
-    font-weight: bold;
-}
-.graduation{
-    margin-top: 123px;
-}
-.graduation h1{
-    padding: 10px;
-    font-size: 23px;
-    font-size: 22px;
 }
 
 .service{
-    /* display: flex; */
-    /* justify-content: center; */
-    /* text-align: center; */
     background-color: black;
     color: white;
     height: 550px;
@@ -177,6 +152,7 @@ width: 200px;
     text-align: center;
     flex-direction: column;
     /* margin: 30px 0px ; */
+    color: white;
     text-align: center;
 }
 .hello h1{
@@ -206,8 +182,21 @@ width: 200px;
     padding: 8px;
 }
 
+.skills{
+    height: 550px;
+    background: url(./img/two.jpg) no-repeat center center/cover;
+}
 
-
+#language{
+    display: flex;
+    color: violet;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+.program h4{
+    color: white;
+    padding-top: 10px;
+}
 
 
 
