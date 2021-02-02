@@ -9,7 +9,6 @@ body{
 header{
     background-color:#03ddf3eb;
     display: flex;
-    /* position: relative; */
     height: 72px;
     
 }
@@ -48,14 +47,14 @@ header{
 .profile{
     background: url(./img/two.jpg) no-repeat center center/cover;
     background-color: #c0b1b19e;
-    height: 480px;
+    height: 550px;
 }
 .intro{
     display: flex;
     justify-content: space-around;
 }
 .para{
-    margin-top: 98px;
+    margin-top:140px;
     font-weight: bold;
 }
 #first{
@@ -63,29 +62,31 @@ header{
 }
 #second{
     font-weight: bold;
-    font-size: 33px;
+    font-size: 37px;
     color: white;
 }
 #third{
     color: white;
+}
+.para p{
+    padding: 0px;
 }
 strong{
     color:#c602e9 ;
     font-size: 26px;
 }
 .btn{
-    background-color: violet;
+    background-color: yellow;
     font-size: 17px;
     font-weight: bold;
     margin: 22px -4px;
     padding:8px 60px;
-    border-radius: 13px;
-    box-shadow: 0px 0px 10px #a94ae5;
     cursor: pointer;
 }
 .btn:hover{
     background-color: rebeccapurple;
     color: white;
+    border-radius: 13px;
 }
 .about{
     background-color:black;
@@ -100,6 +101,7 @@ strong{
     width:49%;
     height:64%;
     margin:106px 117px;
+    border-radius: 22px;
 }
 .section-title{
     margin:45px 29px;
@@ -123,12 +125,11 @@ width: 200px;
     color:#c602e9;
 }
 .about-me p{
-    width: 528px;
+    width: 530px;
 }
 .study{
     height:550px;
     background: url(./img/two.jpg) no-repeat center center/cover;
-    /* background: url(); */
     color: white;
 }
 
@@ -151,7 +152,6 @@ width: 200px;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    /* margin: 30px 0px ; */
     color: white;
     text-align: center;
 }
@@ -159,7 +159,7 @@ width: 200px;
     margin: 30px 0px 0px 0px;
 }
 .hello h5{
-    color: violet;
+    color: rgb(218, 13, 218);
 }
 
 #service-box{
@@ -169,11 +169,17 @@ width: 200px;
 }
 .box{
     height: 190px;
-    width: 290px;
+    width: 330px;
     box-shadow: 0px 0px 10px violet;
     border-radius: 10px;
     text-align: center;
     font-weight: bold;
+}
+.box:hover{
+    background-color: gray;
+    color:black;
+    border-radius: 0px;
+    box-shadow: 0px 0px 10px gray;
 }
 .box i{
     color: violet;
@@ -198,5 +204,42 @@ width: 200px;
     padding-top: 10px;
 }
 
+.contact{
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+.contact h2{
+    color: rgb(228, 30, 228);
+    text-decoration: underline;
+    margin-left: 64px;
+}
+#get{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px 0px 30px;
+}
+.touch{
+    padding: 15px;
+    color:violet;
+    text-decoration: underline;
+}
+
+.touch ::before{
+    margin: 20px;
+    color: white;
+}
+.touch p{
+    margin-left: 64px;
+    color: white;
+    font-weight: bold;
+}
 
 
+footer{
+    background-color: yellow;
+    color: red;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
