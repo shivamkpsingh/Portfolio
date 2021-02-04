@@ -2,19 +2,13 @@
     padding: 0;
     margin: 0;
 }
-body{
-    width: 100%;
 
-}
 header{
     background-color:#03ddf3eb;
     display: flex;
     height: 72px;
+    justify-content: space-between;
     
-}
-.logo img{
-    height: 65px;
-    margin-left: 30px;
 }
 .logo h1{
     margin: 9px 28px;
@@ -22,23 +16,24 @@ header{
 .logo h1 b {
     color:#c602e9 ;
 } 
-.navbar   {
-    display: flex;
-}
 .navbar ul {
     display: flex;
-    margin-left: 871px;
     list-style: none;
-    margin-top: 20px;
+    margin-top: 11px;
 }
-.navbar ul li a{
+.navbar ul li {
     padding: 9px;
-    margin:0px 10px;
     font-size: 25px;
-    text-decoration: none;
+    
     color:black;
     font-weight: bold;
 }
+.navbar ul li a{
+    text-decoration: none;
+    /* margin:0px 10px; */
+}
+
+
 .navbar ul li a:hover{
     background-color: #c602e9;
     color:white;
@@ -94,37 +89,33 @@ strong{
     height: 600px;
     
 }
-.Title{
+#Title{
     display: flex;
+    justify-content: space-around;
 }
-.about img{
-    width:49%;
-    height:64%;
-    margin:106px 117px;
+.about-me img{
+    width:31%;
+    height:71%;
+    margin:64px 117px;
     border-radius: 22px;
 }
-.section-title{
-    margin:45px 29px;
-
-}
-.section-title h1{
-width: 200px;
-}
-.section-title h5{
-       margin: 0px 30px;
-       color:#c602e9;
-}
-.about-me{
-    margin-top:151px;
+.about-section{
+    margin-top:111px;
     margin-right:136px;
 }
-.about-me h1{
+.about-section h1{
+    width:470px;
+}
+.about-section h1{
     font-size: 27px;
 }
-.about-me h1 b{
+.about-section h1 b{
     color:#c602e9;
 }
-.about-me p{
+.about-section p b{
+    color:#7b9968;
+}
+.about-section p{
     width: 530px;
 }
 .study{
@@ -170,7 +161,7 @@ width: 200px;
 .box{
     height: 190px;
     width: 330px;
-    box-shadow: 0px 0px 10px violet;
+    box-shadow: 0px 0px 6px violet;
     border-radius: 10px;
     text-align: center;
     font-weight: bold;
@@ -179,7 +170,7 @@ width: 200px;
     background-color: gray;
     color:black;
     border-radius: 0px;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 6px gray;
 }
 .box i{
     color: violet;
@@ -215,8 +206,8 @@ width: 200px;
     margin-left: 64px;
 }
 #get{
-    display: flex;
-    flex-direction: column;
+    display:inline;
+    /* flex-direction: column; */
     margin: 30px 0px 0px 30px;
 }
 .touch{
@@ -236,10 +227,82 @@ width: 200px;
 }
 
 
+#contact-page{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    padding-top: 80px;
+}
+
+
 footer{
     background-color: yellow;
     color: red;
     text-align: center;
     padding: 15px;
     font-weight: bold;
+}
+
+@media screen and (max-width:480px) and (min-width:0px){
+    header{
+        height: 116px;
+        display: flex;
+        flex-direction: column;
+    }
+    .logo h1{
+        margin: 9px 125px;
+    }
+    .navbar ul{
+        margin: -51px 57px;
+    }
+    .navbar ul li{
+        padding: 6px;
+        font-size: 18px;
+    }
+    .profile{
+        height: 420px;
+    }
+    #Title{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me img{
+        width: 35%;
+        margin-top: 20px;
+    }
+    .about-section{
+        margin-top: -48px;
+    }
+    .about-section p{
+        width: 470px;
+    }
+    .btn{
+        margin: 7px 7px;
+    }
+    .study{
+        height: 745px;
+    }
+    #education{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .learnig{
+        margin: 11px 0px;
+    }
+    .service{
+        height: 852px;
+    }
+
+    #service-box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .box{
+        margin: 11px 0px;
+    }
+    .skills{
+        height: 416px;
+    }
 }
