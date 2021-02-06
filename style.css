@@ -5,9 +5,9 @@
 html{
     scroll-behavior: smooth;
 }
-
+  /* header section */
 header{
-    background-color:#03ddf3eb;
+    background-color: azure;
     display: flex;
     height: 72px;
     justify-content: space-between;
@@ -33,15 +33,17 @@ header{
 }
 .navbar ul li a{
     text-decoration: none;
-    /* margin:0px 10px; */
 }
 
 
 .navbar ul li a:hover{
-    background-color: #c602e9;
-    color:white;
-    border-radius: 9px;
+    color:black;
 }
+
+
+/* home section */
+
+
 #profile{
     background: url(./img/two.jpg) no-repeat center center/cover;
     background-color: #c0b1b19e;
@@ -73,6 +75,10 @@ strong{
     color:#c602e9 ;
     font-size: 26px;
 }
+
+
+/* utility classes */
+
 .btn{
     background-color: yellow;
     font-size: 17px;
@@ -80,12 +86,33 @@ strong{
     margin: 22px -4px;
     padding:8px 60px;
     cursor: pointer;
+    display: inline-block;
+    letter-spacing: 2px;
 }
 .btn:hover{
-    background-color: rebeccapurple;
+    background-color:#a9c2f185;
     color: white;
-    border-radius: 13px;
+    border-radius: 10px;
+    display: inline-block;
 }
+.hello{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+}
+.hello h1{
+    margin: 30px 0px 0px 0px;
+}
+.hello h5{
+    color: rgb(218, 13, 218);
+    font-weight: bold;
+}
+
+/* about section */
 #about{
     background-color:black;
     color: white;
@@ -101,6 +128,7 @@ strong{
     height:71%;
     margin:64px 117px;
     border-radius: 22px;
+    box-shadow: 0px 0px 6px violet;
 }
 .about-section{
     margin-top:111px;
@@ -108,8 +136,6 @@ strong{
 }
 .about-section h1{
     width:470px;
-}
-.about-section h1{
     font-size: 27px;
 }
 .about-section h1 b{
@@ -119,8 +145,10 @@ strong{
     color:#7b9968;
 }
 .about-section p{
+    font-family: 'Sacramento', cursive;
     width: 530px;
 }
+/* education section */
 .study{
     height:550px;
     background: url(./img/two.jpg) no-repeat center center/cover;
@@ -135,25 +163,11 @@ strong{
     margin-top: 90px;
     font-weight: bold;
 }
-
+/* service section */
 #service{
     background-color: black;
     color: white;
     height: 550px;
-}
-.hello{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    color: white;
-    text-align: center;
-}
-.hello h1{
-    margin: 30px 0px 0px 0px;
-}
-.hello h5{
-    color: rgb(218, 13, 218);
 }
 
 #service-box{
@@ -181,7 +195,7 @@ strong{
 .box i,h1,p{
     padding: 8px;
 }
-
+/* skills section */
 .skills{
     height: 550px;
     background: url(./img/two.jpg) no-repeat center center/cover;
@@ -197,7 +211,7 @@ strong{
     color: white;
     padding-top: 10px;
 }
-
+/* contact section */
 #contact{
     background-color: black;
     color: white;
@@ -210,7 +224,6 @@ strong{
 }
 #get{
     display:inline;
-    /* flex-direction: column; */
     margin: 30px 0px 0px 30px;
 }
 .touch{
@@ -229,14 +242,7 @@ strong{
     font-weight: bold;
 }
 
-
-#contact-page{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 40px;
-    padding-top: 80px;
-}
-
+/* footer */
 
 footer{
     background-color: yellow;
@@ -245,6 +251,8 @@ footer{
     padding: 15px;
     font-weight: bold;
 }
+/* media query */
+
 
  @media screen and (max-width:360px){
    body, html{
@@ -314,7 +322,7 @@ footer{
     .box{
         margin: 11px 0px;
         height: 202px;
-        width: 212px;
+        width: 254px;
     }
     .skills{
         height: 673px;
