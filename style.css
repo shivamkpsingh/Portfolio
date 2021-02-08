@@ -7,7 +7,7 @@ html{
 }
   /* header section */
 header{
-    background-color: azure;
+    background-color: #ff5169a3;
     display: flex;
     height: 72px;
     justify-content: space-between;
@@ -45,28 +45,25 @@ header{
 
 
 #profile{
-    background: url(./img/two.jpg) no-repeat center center/cover;
-    background-color: #c0b1b19e;
-    height: 550px;
+    height: 300px;
 }
 .intro{
-    display: flex;
-    justify-content: space-around;
+    margin-left: 90px;
 }
 .para{
     margin-top:140px;
     font-weight: bold;
 }
 #first{
-    color: white;
+    color: black;
 }
 #second{
     font-weight: bold;
     font-size: 37px;
-    color: white;
+    color: black;
 }
 #third{
-    color: white;
+    color: black;
 }
 .para p{
     padding: 0px;
@@ -80,20 +77,20 @@ strong{
 /* utility classes */
 
 .btn{
-    background-color: yellow;
+    background: linear-gradient(#2196f3,#62c099eb);
     font-size: 17px;
     font-weight: bold;
     margin: 22px -4px;
     padding:8px 60px;
+    border-radius: 23px;
     cursor: pointer;
-    display: inline-block;
     letter-spacing: 2px;
+    outline: none;
 }
 .btn:hover{
     background-color:#a9c2f185;
     color: white;
-    border-radius: 10px;
-    display: inline-block;
+    outline: none;
 }
 .hello{
     display: flex;
@@ -105,16 +102,14 @@ strong{
     font-family: 'Sacramento', cursive;
 }
 .hello h1{
+    color: black;
+    text-decoration: underline;
     margin: 30px 0px 0px 0px;
-}
-.hello h5{
-    color: rgb(218, 13, 218);
-    font-weight: bold;
 }
 
 /* about section */
+
 #about{
-    background-color:black;
     color: white;
     height: 600px;
     
@@ -128,13 +123,15 @@ strong{
     height:71%;
     margin:64px 117px;
     border-radius: 22px;
-    box-shadow: 0px 0px 6px violet;
+    box-shadow: 0px 0px 6px black;
+
 }
 .about-section{
     margin-top:111px;
     margin-right:136px;
 }
 .about-section h1{
+    color: black;
     width:470px;
     font-size: 27px;
 }
@@ -145,13 +142,14 @@ strong{
     color:#7b9968;
 }
 .about-section p{
+    color: black;
     font-family: 'Sacramento', cursive;
     width: 530px;
 }
 /* education section */
+
 .study{
     height:550px;
-    background: url(./img/two.jpg) no-repeat center center/cover;
     color: white;
 }
 
@@ -160,12 +158,13 @@ strong{
     justify-content: space-around;
 }
 .learnig{
+    color: black;
     margin-top: 90px;
     font-weight: bold;
 }
 /* service section */
+
 #service{
-    background-color: black;
     color: white;
     height: 550px;
 }
@@ -176,10 +175,11 @@ strong{
     margin-top: 90px;
 }
 .box{
+    color: black;
     height: 190px;
     width: 330px;
-    box-shadow: 0px 0px 6px violet;
-    border-radius: 10px;
+    box-shadow: 0px 0px 6px black;
+    border-radius: 0px 0px 20px 0px;
     text-align: center;
     font-weight: bold;
 }
@@ -196,9 +196,10 @@ strong{
     padding: 8px;
 }
 /* skills section */
+
+
 .skills{
     height: 550px;
-    background: url(./img/two.jpg) no-repeat center center/cover;
 }
 
 #language{
@@ -208,13 +209,11 @@ strong{
     margin-top: 80px;
 }
 .program h4{
-    color: white;
     padding-top: 10px;
 }
+
 /* contact section */
 #contact{
-    background-color: black;
-    color: white;
     height: 100%;
 }
 #contact h2{
@@ -223,29 +222,30 @@ strong{
     margin-left: 64px;
 }
 #get{
-    display:inline;
-    margin: 30px 0px 0px 30px;
+    display: flex;
+    justify-content:space-between;
+    margin: 0px;
 }
 .touch{
-    padding: 15px;
+    padding: 5px 0px;
     color:violet;
     text-decoration: underline;
 }
 
 .touch ::before{
     margin: 20px;
-    color: white;
+    color: black;
 }
 .touch p{
     margin-left: 64px;
-    color: white;
+    color: black;
     font-weight: bold;
 }
 
 /* footer */
 
 footer{
-    background-color: yellow;
+    background-color: #151919;
     color: red;
     text-align: center;
     padding: 15px;
@@ -257,7 +257,6 @@ footer{
  @media screen and (max-width:360px){
    body, html{
         overflow-x: hidden;
-        /* width: 100%; */
     }
     header{
         height: 116px;
@@ -275,11 +274,20 @@ footer{
         font-size: 18px;
     }
     #profile{
-        height: 420px;
+        height: 250px;
+    }
+    .intro {
+        margin-left: 27px;
+    }
+    .para button{
+        margin: 42px 2px;
     }
     #Title{
         display: flex;
         flex-direction: column;
+    }
+    #about{
+        height: 681px;
     }
     .about-me img{
         width: 35%;
@@ -295,8 +303,8 @@ footer{
         width: 303px;
     }
     .btn{
-        margin: 7px 7px;
-        padding: 0px 23px;
+        margin: 4px 4px;
+        padding: 10px 23px;
     }
     .study{
         height:629px;
@@ -332,14 +340,14 @@ footer{
         flex-direction: column;
         margin: 30px 129px;
     }
+    #get{
+        margin: 0px;
+    }
     .touch{
         padding: 6px;
     }
-    .touch ::before {
-        margin: 7px;
-    }
     .touch p{
-        margin-left: 39px;
+        margin-left: 62px;
         font-size: 12px;
     }
     #contact h2{
