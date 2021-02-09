@@ -11,7 +11,7 @@ header{
     display: flex;
     height: 72px;
     justify-content: space-between;
-    
+    box-shadow: 0px 2px 3px #938080f5;
 }
 .logo h1{
     margin: 9px 28px;
@@ -61,6 +61,7 @@ header{
     font-weight: bold;
     font-size: 37px;
     color: black;
+    text-shadow: 0px 0px 4px black;
 }
 #third{
     color: black;
@@ -85,6 +86,7 @@ strong{
     border-radius: 23px;
     cursor: pointer;
     letter-spacing: 2px;
+    border: 1px solid black;
     outline: none;
 }
 .btn:hover{
@@ -103,7 +105,7 @@ strong{
 }
 .hello h1{
     color: black;
-    text-decoration: underline;
+    text-shadow: 0px 0px 4px black;
     margin: 30px 0px 0px 0px;
 }
 
@@ -236,6 +238,9 @@ strong{
     margin: 20px;
     color: black;
 }
+touch ::after{
+    font-weight: 500;
+}
 .touch p{
     margin-left: 64px;
     color: black;
@@ -254,7 +259,8 @@ footer{
 /* media query */
 
 
- @media screen and (max-width:360px){
+ @media only screen and (max-width:360px){
+
    body, html{
         overflow-x: hidden;
     }
@@ -262,16 +268,19 @@ footer{
         height: 116px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
     }
-    .logo h1{
-        margin: 9px 105px;
+    .logo h1 {
+        margin: 0px 9px;
     }
-    .navbar ul{
-        margin: -51px 57px;
+    navbar ul {
+        margin: 3px;
     }
-    .navbar ul li{
-        padding: 6px;
-        font-size: 18px;
+    .navbar ul li {
+        padding: 4px;
+        font-size: 21px;
     }
     #profile{
         height: 250px;
@@ -279,8 +288,9 @@ footer{
     .intro {
         margin-left: 27px;
     }
-    .para button{
-        margin: 42px 2px;
+    .para button {
+        margin: 31px 4px;
+        padding: 10px 31px;
     }
     #Title{
         display: flex;
@@ -300,14 +310,13 @@ footer{
         font-size: 15px;
     }
     .about-section p{
-        width: 303px;
+        width: 286px;
     }
-    .btn{
-        margin: 4px 4px;
-        padding: 10px 23px;
+    .about-section button{
+        margin: 26px 11px;
     }
     .study{
-        height:629px;
+        height:572px;
     }
     #education{
         display: flex;
@@ -355,3 +364,71 @@ footer{
     }
 } 
 
+@media only screen and (min-width:361px) and (max-width:574px){
+    body, html{
+        overflow-x: hidden;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        height: 134px;
+    }
+    #profile {
+        height: 220px;
+    }
+    .intro {
+        margin-left: 47px;
+    }
+    #Title{
+        display: flex;
+        flex-direction: column;
+    }
+    #about {
+        height: 741px;
+    }
+    .about-section {
+        margin-top: -35px;
+    }
+    .about-section h1{
+        font-size: 19px;
+    }
+    .about-section p{
+        width: 352px;
+    }
+    #about .btn{
+        margin: 23px 13px;
+        padding: 7px 49px;
+    }
+    #education {
+        display: flex;
+        flex-direction: column;
+    }
+    .learnig {
+        margin-top: 19px;
+        font-size: 12px;
+    }
+    .study {
+        height: 624px;
+    }
+    #service {
+        height: 855px;
+    }
+    #service-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        margin: 14px;
+    }
+    .skills {
+        height: 653px;
+    }
+    #language {
+        display: flex;
+        flex-direction: column;
+        margin-left: 114px;
+    }
+}
