@@ -6,6 +6,7 @@ html{
     scroll-behavior: smooth;
 }
   /* header section */
+
 header{
     background-color: #ff5169a3;
     display: flex;
@@ -203,7 +204,7 @@ strong{
 
 
 .skills{
-    height: 550px;
+    height:350px;
 }
 
 #language{
@@ -225,28 +226,33 @@ strong{
     text-decoration: underline;
     margin-left: 64px;
 }
-#get{
-    display: flex;
-    justify-content:space-between;
-    margin: 0px;
-}
 .touch{
-    padding: 5px 0px;
-    color:violet;
-    text-decoration: underline;
+    margin: 10px auto;
+    
 }
-
-.touch ::before{
-    margin: 20px;
-    color: black;
+.touch input{
+    padding: 6px 8px;
+    margin: 12px;
+    width: 20%;
+    border-radius: 6px;
+    border: 1px solid black;
 }
-touch ::after{
-    font-weight: 500;
+.touch textarea{
+    width: 20%;
+    padding: 5px 8px;
+    margin: 12px;
+    border: 1px solid black;
+    border-radius: 6px;
 }
-.touch p{
-    margin-left: 64px;
-    color: black;
-    font-weight: bold;
+.btn1{
+    margin: 10px 60px;
+    padding: 8px 30px;
+    font-size: 12px;
+    background-color: rgb(93, 0, 0,0.62);
+    color: #00ffb8;
+    border: 1px solid black;
+    box-shadow: 0px 3px 4px 0px rgb(0, 0, 0,7);
+    cursor: pointer;
 }
 
 /* footer */
@@ -354,25 +360,18 @@ footer {
         width: 254px;
     }
     .skills{
-        height: 673px;
+        height: 640px;
     }
     #language{
         display: flex;
         flex-direction: column;
         margin: 30px 129px;
     }
-    #get{
-        margin: 0px;
+    .touch input{
+        width: 65%;
     }
-    .touch{
-        padding: 6px;
-    }
-    .touch p{
-        margin-left: 62px;
-        font-size: 12px;
-    }
-    #contact h2{
-        margin: 24px 27px;
+    .touch textarea{
+        width: 65%;
     }
 } 
 
@@ -445,5 +444,11 @@ footer {
         display: flex;
         flex-direction: column;
         margin-left: 114px;
+    }
+    .touch input{
+        width: 55%;
+    }
+    .touch textarea{
+        width: 290px;
     }
 }
