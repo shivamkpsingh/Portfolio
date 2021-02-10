@@ -15,9 +15,11 @@ header{
 }
 .logo h1{
     margin: 9px 28px;
+    text-shadow: 0px 0px 4px black;
 }
 .logo h1 b {
     color:#c602e9 ;
+    text-shadow: 0px 0px 4px #c602e9;
 } 
 .navbar ul {
     display: flex;
@@ -70,10 +72,10 @@ header{
     padding: 0px;
 }
 strong{
-    color:#c602e9 ;
+    color:#c602e9;
     font-size: 26px;
+    text-shadow: 0px 0px 6px #c602e9;
 }
-
 
 /* utility classes */
 
@@ -249,13 +251,22 @@ touch ::after{
 
 /* footer */
 
-footer{
-    background-color: #151919;
-    color: red;
-    text-align: center;
-    padding: 15px;
-    font-weight: bold;
+footer {
+    background-color:#db21215e;
 }
+
+.social-media {
+    display: flex;
+    justify-content: center;
+} 
+.social-media a{
+    text-decoration: none;
+    padding: 5px;
+    margin: 9px 8px;
+}
+
+
+
 /* media query */
 
 
@@ -297,11 +308,11 @@ footer{
         flex-direction: column;
     }
     #about{
-        height: 681px;
+        height: 728px;
     }
     .about-me img{
         width: 35%;
-        margin-top: 20px;
+        margin: 64px 117px;
     }
     .about-section{
         margin-top: -48px;
@@ -310,10 +321,11 @@ footer{
         font-size: 15px;
     }
     .about-section p{
-        width: 286px;
+        width: 310px;
     }
     .about-section button{
         margin: 26px 11px;
+        padding: 12px 15px;
     }
     .study{
         height:572px;
@@ -388,6 +400,9 @@ footer{
     #about {
         height: 741px;
     }
+    .about-me img{
+        margin: 64px 130px;
+    }
     .about-section {
         margin-top: -35px;
     }
@@ -398,8 +413,8 @@ footer{
         width: 352px;
     }
     #about .btn{
-        margin: 23px 13px;
-        padding: 7px 49px;
+        margin: 22px 24px;
+        padding: 15px 22px;
     }
     #education {
         display: flex;
