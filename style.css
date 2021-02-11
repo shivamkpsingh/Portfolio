@@ -400,16 +400,18 @@ footer {
         height: 741px;
     }
     .about-me img{
-        margin: 64px 130px;
+        margin: 50px 170px;
     }
     .about-section {
-        margin-top: -35px;
+        margin: -40px auto;
     }
     .about-section h1{
+        margin: 2px auto;
         font-size: 19px;
     }
     .about-section p{
-        width: 352px;
+        margin: 20px auto;
+        width: 473px;
     }
     #about .btn{
         margin: 22px 24px;
@@ -450,5 +452,65 @@ footer {
     }
     .touch textarea{
         width: 290px;
+    }
+}
+
+
+@media only screen and (min-width:574px) and (max-width:768px){
+    body,html{
+        overflow-x: hidden;
+    }
+    #Title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-me img{
+        margin: 10px 230px;
+    }
+    #about {
+        height: 804px;
+    }
+    .about-section h1{
+        font-size: 23px;
+        margin: 2px auto;
+    }
+    .about-section {
+        margin-top: 10px;
+    }
+    .about-section p{
+        margin: 20px auto;
+        width: 463px;
+    }
+    #about .btn{
+        margin: 22px 76px;
+    }
+    #education {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .study {
+        height: 763px;
+    }
+    .learnig{
+        margin: 20px 50px;
+    }
+    #service {
+        height: 815px;
+    }
+    #service-box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .box{
+        margin: 15px auto;
+    }
+    .touch input{
+        width: 45%;
+    }
+    .touch textarea{
+        width: 45%;
     }
 }
