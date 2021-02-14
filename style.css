@@ -211,7 +211,7 @@ strong{
     display: flex;
     color: violet;
     justify-content: space-around;
-    margin-top: 80px;
+    margin-top: 38px;
 }
 .program h4{
     padding-top: 10px;
@@ -292,7 +292,7 @@ footer {
     .logo h1 {
         margin: 0px 9px;
     }
-    navbar ul {
+    .navbar ul {
         margin: 3px;
     }
     .navbar ul li {
@@ -327,7 +327,7 @@ footer {
         font-size: 15px;
     }
     .about-section p{
-        width: 310px;
+        width: 313px;
     }
     .about-section button{
         margin: 26px 11px;
@@ -382,7 +382,6 @@ footer {
     header{
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
         height: 134px;
     }
@@ -400,7 +399,7 @@ footer {
         height: 741px;
     }
     .about-me img{
-        margin: 50px 170px;
+        margin: 50px 150px;
     }
     .about-section {
         margin: -40px auto;
@@ -410,8 +409,8 @@ footer {
         font-size: 19px;
     }
     .about-section p{
-        margin: 20px auto;
-        width: 473px;
+        /* margin: 20px auto; */
+        width: 356px;
     }
     #about .btn{
         margin: 22px 24px;
@@ -456,9 +455,23 @@ footer {
 }
 
 
-@media only screen and (min-width:574px) and (max-width:768px){
+@media only screen and (min-width:575px) and (max-width:768px){
     body,html{
         overflow-x: hidden;
+    }
+    .para {
+        
+        font-size: 26px;
+    }
+    #second {
+    
+        font-size: 47px;
+    }
+    #third {
+        font-size: 33px;
+    }
+    #profile .btn {
+        font-size: 27px;
     }
     #Title{
         display: flex;
@@ -512,5 +525,59 @@ footer {
     }
     .touch textarea{
         width: 45%;
+    }
+}
+
+
+@media only screen and (min-width:769px) and (max-width:1024px){
+    body,html{
+        overflow-x: hidden;
+    }
+    #Title {
+        display: flex;
+        flex-direction: column;
+    }
+    #about {
+        height: 1180px;
+    }
+    .about-me img{
+        margin: 0px 250px;
+        width: 41%;
+    }
+    .about-section {
+        margin: 43px auto;
+    }
+    .about-section h1 {
+        
+        font-size: 24px;
+    }
+    .about-section p{
+        font-size: 23px;
+    }
+    .study {
+        height: 775px;
+    }
+    #education {
+        display: flex;
+        flex-direction: column;
+    }
+    .learnig{
+        margin: 12px 50px; 
+    }
+    #service {
+        height: 672px;
+    }
+    #service-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box{
+        margin: 20px 10px;
+    }
+    .touch input {
+        width: 44%;
+    }    
+    .touch textarea{
+        width: 44%;
     }
 }
