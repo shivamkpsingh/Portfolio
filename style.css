@@ -95,7 +95,6 @@ strong{
 .btn:hover{
     background-color:rgb(36, 161, 199);
     color: white;
-    outline: none;
 }
 .hello{
     display: flex;
@@ -187,9 +186,11 @@ strong{
     border-radius: 0px 0px 20px 0px;
     text-align: center;
     font-weight: bold;
+    transition: all ease-in 0.5s;
+    cursor: pointer;
 }
 .box:hover{
-    background-color: gray;
+    background-color: rgb(14, 125, 153);
     color:black;
     border-radius: 0px;
     box-shadow: 0px 0px 6px gray;
@@ -219,6 +220,8 @@ strong{
 }
 
 /* contact section */
+
+
 #contact{
     height: 100%;
 }
@@ -234,26 +237,42 @@ strong{
 .touch input{
     padding: 6px 8px;
     margin: 12px;
+    letter-spacing: 2.5px;
     width: 20%;
     border-radius: 6px;
     border: 1px solid black;
+}
+.touch input:focus{
+    outline:none;
+    border-color: rgb(8, 150, 185);
+    box-shadow: 0px 0px 6px rgb(8, 150, 185);
 }
 .touch textarea{
     width: 20%;
     padding: 5px 8px;
+    letter-spacing: 2.5px;
     margin: 12px;
     border: 1px solid black;
     border-radius: 6px;
+    resize: none;
+    
+}
+.touch textarea:focus{
+    outline:none;
+    border-color: rgb(8, 150, 185);
+    box-shadow: 0px 0px 6px rgb(8, 150, 185);
 }
 .btn1{
     margin: 10px 60px;
-    padding: 8px 30px;
+    padding: 10px 30px;
     font-size: 12px;
-    background-color: rgb(93, 0, 0,0.62);
-    color: #00ffb8;
-    border: 1px solid black;
-    box-shadow: 0px 3px 4px 0px rgb(0, 0, 0,7);
+    background-color: rgba(5, 202, 209, 0.62);
+    color: #b80834;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 22px;
+    letter-spacing: 2.3px;
     cursor: pointer;
+    outline: none;
 }
 
 /* footer */
