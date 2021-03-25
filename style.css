@@ -1,617 +1,73 @@
-*{
-    padding: 0;
-    margin: 0;
+.my-brand{
+    font-size: 2rem;
+    font-weight: 600;
 }
-html{
-    scroll-behavior: smooth;
+.my-link{
+    font-size: 1.4rem;
 }
-  /* header section */
+.about-me h2{
+   font-size: 1rem;
+}
+.about-me h3{
+    font-size: 1rem;
+}
+.about-me  span{
+    font-size: 1.6rem;
+    color: #0d6efd;
+}
+.my-button{
+    font-size: 1.3rem;
+    padding: 0.5rem 2rem;
+    border-radius: 1.5rem;
+}
+.utility-class{
+    text-align: center;
+}
+.utility-class h1{
+    font-size: 3rem;
+}
+.utility-class span{
+    font-size: 1.6rem;
+    color: #0d6efd;
+}
+.text-muted{
+    color:#0d6efd !important;
+}
+.my-img{
+    height: 26rem;
+    margin-top: 1rem !important;
+}
+.my-btn{
+    font-size: 1.8rem;
+    background-color:#0d6efd;
+    color: #fff;
+    padding: 0.7rem 1.2rem;
+    margin: 1rem 2rem;
+    border-radius: 1.3rem;
 
-header{
-    background-color: #ff5169a3;
-    display: flex;
-    height: 72px;
-    justify-content: space-between;
-    box-shadow: 0px 2px 3px #938080f5;
 }
-.logo h1{
-    margin: 9px 28px;
-    text-shadow: 0px 0px 4px black;
-}
-.logo h1 b {
-    color:#c602e9 ;
-    text-shadow: 0px 0px 4px #c602e9;
-} 
-.navbar ul {
-    display: flex;
-    list-style: none;
-    margin: 11px;
-}
-.navbar ul li {
-    padding: 9px;
-    font-size: 25px;
-    
-    color:black;
-    font-weight: bold;
-}
-.navbar ul li a{
-    text-decoration: none;
-}
-
-.navbar ul li a:hover{
-    color:black;
-    text-decoration: underline;
-}
-
-
-/* home section */
-
-
-#profile{
-    height: 300px;
-}
-.intro{
-    margin-left: 90px;
-}
-.para{
-    margin-top:140px;
-    font-weight: bold;
-}
-#first{
-    color: black;
-}
-#second{
-    font-weight: bold;
-    font-size: 37px;
-    color: black;
-    text-shadow: 0px 0px 4px black;
-}
-#third{
-    color: black;
-}
-.para p{
-    padding: 0px;
-}
-strong{
-    color:#c602e9;
-    font-size: 26px;
-    text-shadow: 0px 0px 6px #c602e9;
-}
-
-/* utility classes */
-
-.btn{
-    background: #ff5169a3;
-    font-size: 17px;
-    font-weight: bold;
-    margin: 22px -4px;
-    padding:8px 60px;
-    border-radius: 23px;
-    cursor: pointer;
-    letter-spacing: 2px;
-    border: 1px solid black;
-    outline: none;
-}
-.btn:hover{
-    background-color:rgb(36, 161, 199);
-    color: white;
-}
-.hello{
+.skill{
     display: flex;
     justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    color: white;
-    text-align: center;
-    font-family: 'Sacramento', cursive;
+    flex-wrap: wrap;
 }
-.hello h1{
-    color: black;
-    text-shadow: 0px 0px 4px black;
-    margin: 30px 0px 0px 0px;
+.s-btn{
+    background-color:#0d6efd;
+    border-radius: 1rem;
+    padding:.3rem 1.2rem;
 }
-
-/* about section */
-
-#about{
-    color: white;
-    height: 600px;
-    
-}
-#Title{
-    display: flex;
-    justify-content: space-around;
-}
-.about-me img{
-    width:31%;
-    height:71%;
-    margin:64px 117px;
-    border-radius: 22px;
-    box-shadow: 0px 0px 6px black;
-
-}
-.about-section{
-    margin-top:111px;
-    margin-right:136px;
-}
-.about-section h1{
-    color: black;
-    width:470px;
-    font-size: 27px;
-}
-.about-section h1 b{
-    color:#c602e9;
-}
-.about-section p b{
-    color:#7b9968;
-}
-.about-section p{
-    color: black;
-    font-family: 'Sacramento', cursive;
-    width: 530px;
-}
-/* education section */
-
-.study{
-    height:550px;
-    color: white;
-}
-
-#education{
-    display: flex;
-    justify-content: space-around;
-}
-.learnig{
-    color: black;
-    margin-top: 90px;
-    font-weight: bold;
-}
-/* service section */
-
-#service{
-    color: white;
-    height: 550px;
-}
-
-#service-box{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 90px;
-}
-.box{
-    color: black;
-    height: 190px;
-    width: 330px;
-    box-shadow: 0px 0px 6px black;
-    border-radius: 0px 0px 20px 0px;
-    text-align: center;
-    font-weight: bold;
-    transition: all ease-in 0.5s;
-    cursor: pointer;
-}
-.box:hover{
-    background-color: rgb(14, 125, 153);
-    color:black;
-    border-radius: 0px;
-    box-shadow: 0px 0px 6px gray;
-}
-.box i{
-    color: violet;
-}
-.box i,h1,p{
-    padding: 8px;
-}
-/* skills section */
-
-
-.skills{
-    height:350px;
-
-}
-
-#language{
-    display: flex;
-    color: violet;
-    justify-content: space-around;
-    margin-top: 38px;
-}
-.program h4{
-    padding-top: 10px;
-}
-
-/* contact section */
-
-
-#contact{
-    height: 100%;
-}
-#contact h2{
-    color: rgb(228, 30, 228);
-    text-decoration: underline;
-    margin-left: 64px;
-}
-.touch{
-    margin: 10px auto;
-    
-}
-.touch input{
-    padding: 6px 8px;
-    margin: 12px;
-    letter-spacing: 2.5px;
-    width: 20%;
-    border-radius: 6px;
-    border: 1px solid black;
-}
-.touch input:focus{
-    outline:none;
-    border-color: rgb(8, 150, 185);
-    box-shadow: 0px 0px 6px rgb(8, 150, 185);
-}
-.touch textarea{
-    width: 20%;
-    padding: 5px 8px;
-    letter-spacing: 2.5px;
-    margin: 12px;
-    border: 1px solid black;
-    border-radius: 6px;
-    resize: none;
-    
-}
-.touch textarea:focus{
-    outline:none;
-    border-color: rgb(8, 150, 185);
-    box-shadow: 0px 0px 6px rgb(8, 150, 185);
-}
-.btn1{
-    margin: 10px 60px;
-    padding: 10px 30px;
-    font-size: 12px;
-    background-color: rgba(5, 202, 209, 0.62);
-    color: #b80834;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 22px;
-    letter-spacing: 2.3px;
-    cursor: pointer;
-    outline: none;
-}
-
-/* footer */
-
 footer {
-    background-color:#db21215e;
+    background-color:#d7d7d7;
 }
 
 .social-media {
+    height: 6rem;
     display: flex;
     justify-content: center;
+    align-items: center;
 } 
 .social-media a{
     text-decoration: none;
     padding: 5px;
     margin: 9px 8px;
-}
-
-
-
-/* media query */
-
-
- @media only screen and (max-width:360px){
-
-   body, html{
-        overflow-x: hidden;
-    }
-    header{
-        height: 116px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
-    .logo h1 {
-        margin: 0px 9px;
-    }
-    .navbar ul {
-        margin: 3px;
-    }
-    .navbar ul li {
-        padding: 4px;
-        font-size: 21px;
-    }
-    #profile{
-        height: 195px;
-    }
-    .intro {
-        margin: -70px 27px;
-    }
-    .para button {
-        margin: 31px 4px;
-        padding: 10px 31px;
-    }
-    #Title{
-        display: flex;
-        flex-direction: column;
-    }
-    #about{
-        height: 674px;
-    }
-    .about-me img{
-        width: 35%;
-        margin: 2px 117px;
-    }
-    .about-section{
-        margin-top: -48px;
-    }
-    .about-section h1{
-        font-size: 15px;
-        margin-top: 63px;
-    }
-    .about-section p{
-        width: 313px;
-    }
-    .about-section button{
-        margin: 26px 11px;
-        padding: 12px 15px;
-    }
-    .study{
-        height:572px;
-    }
-    #education{
-        display: flex;
-        flex-direction: column;
-    }
-    .learnig{
-        margin: 11px 0px;
-        font-size: 10px;
-    }
-    #service{
-        height: 852px;
-    }
-
-    #service-box {
-        margin-top: 36px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .box{
-        margin: 11px 0px;
-        height: 202px;
-        width: 254px;
-    }
-    .skills{
-        height: 640px;
-    }
-    #language{
-        display: flex;
-        flex-direction: column;
-        margin: 30px 129px;
-    }
-    .touch input{
-        width: 65%;
-    }
-    .touch textarea{
-        width: 65%;
-    }
-} 
-
-@media only screen and (min-width:361px) and (max-width:574px){
-    body, html{
-        overflow-x: hidden;
-    }
-    header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 134px;
-    }
-    #profile {
-        height: 176px;
-    }
-    .intro {
-        margin-top: -61px;
-        margin-left: 47px;
-    }
-    #Title{
-        display: flex;
-        flex-direction: column;
-    }
-    #about {
-        height: 682px;
-    }
-    .about-me img{
-        margin:2px 150px;
-
-    }
-    .about-section {
-        margin: -40px auto;
-    }
-    .about-section h1{
-        /* margin: 2px auto; */
-        margin-left: auto;
-        margin-top: 49px;
-        font-size: 19px;
-    }
-    .about-section p{
-        /* margin: 20px auto; */
-        width: 356px;
-    }
-    #about .btn{
-        margin: 22px 24px;
-        padding: 15px 22px;
-    }
-    #education {
-        display: flex;
-        flex-direction: column;
-    }
-    .learnig {
-        margin-top: 19px;
-        font-size: 12px;
-    }
-    .study {
-        height: 624px;
-    }
-    #service {
-        height: 855px;
-    }
-    #service-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .box {
-        margin: 14px;
-    }
-    .skills {
-        height: 653px;
-    }
-    #language {
-        display: flex;
-        flex-direction: column;
-        margin-left: 114px;
-    }
-    .touch input{
-        width: 55%;
-    }
-    .touch textarea{
-        width: 290px;
-    }
-}
-
-
-@media only screen and (min-width:575px) and (max-width:768px){
-    body,html{
-        overflow-x: hidden;
-    }
-    .para {
-        
-        font-size: 26px;
-    }
-    #second {
-    
-        font-size: 47px;
-    }
-    #third {
-        font-size: 33px;
-    }
-    #profile .btn {
-        font-size: 27px;
-    }
-    #Title{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .about-me img{
-        width: 27%;
-        margin: 10px 268px;
-    }
-    #about {
-        height: 804px;
-    }
-    .about-section h1{
-        font-size: 23px;
-        margin: 2px auto;
-    }
-    .about-section {
-        margin-top: 10px;
-        margin-right: 11px;
-    }
-    .about-section p{
-        margin: 20px auto;
-        width: 463px;
-    }
-    #about .btn{
-        margin: 22px 120px;
-    }
-    #education {
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .study {
-        height: 763px;
-    }
-    .learnig{
-        margin: 20px 50px;
-    }
-    #service {
-        height: 815px;
-    }
-    #service-box {
-        display: flex;
-        flex-direction: column;
-        margin-top: 60px;
-    }
-    .box{
-        margin: 15px auto;
-    }
-    .touch input{
-        width: 45%;
-    }
-    .touch textarea{
-        width: 45%;
-    }
-}
-
-
-@media only screen and (min-width:769px) and (max-width:1024px){
-    body,html{
-        overflow-x: hidden;
-    }
-    #profile .btn{
-        font-size: 25px;
-    }
-    #Title {
-        display: flex;
-        flex-direction: column;
-    }
-    #about {
-        height: 1234px;
-    }
-    .about-me img{
-        margin: 0px 334px;
-        width: 30%;
-    }
-    .about-section {
-        margin: 43px auto;
-    }
-    .about-section h1 {
-        width: 662px;
-        font-size: 38px;
-    }
-    .about-section p{
-        font-size: 29px;
-    }
-    .about-section .btn{
-        font-size: 32px;
-        margin: 62px 116px;
-    }
-    .study {
-        height: 775px;
-    }
-    #education {
-        display: flex;
-        flex-direction: column;
-    }
-    .learnig{
-        margin: 12px 214px; 
-    }
-    #service {
-        height: 672px;
-    }
-    #service-box {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .box{
-        margin: 20px 10px;
-    }
-    .touch input {
-        width: 44%;
-    }    
-    .touch textarea{
-        width: 44%;
-    }
 }
