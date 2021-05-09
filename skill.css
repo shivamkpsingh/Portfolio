@@ -1,0 +1,24 @@
+#skill-section{
+    margin-top: 45px;
+}
+.my-skill{
+    margin: 50px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+.tech-skill{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    margin: 5px 0px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2874f0;
+}
+
+@media only screen and (max-width: 576px){
+    .my-skill{
+        flex-wrap: wrap;
+    }
+}
