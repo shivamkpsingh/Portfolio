@@ -15,6 +15,7 @@
     font-size: 39px;
     margin-top: 10px;
     color: #000000e1;
+    font-family: 'Fjalla One', sans-serif;
   }
   .nav-item .logo h1 span {
     color: #fff;
@@ -43,6 +44,9 @@
     cursor: pointer;
     right: 5%;
     top: 19px;
+    border: 2px solid #524b4b;
+    padding: 3px;
+    border-radius: 8px;
   }
   .line {
     width: 33px;
@@ -50,6 +54,7 @@
     height: 4px;
     margin: 5px 1px;
   }
+
   
   @media only screen and (max-width: 576px) {
     html,
