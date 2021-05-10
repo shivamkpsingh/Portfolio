@@ -4,7 +4,9 @@
 }
 .about-content {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: center;
+    align-items: center;
 }
 
 .about-content  img{
@@ -39,9 +41,7 @@ margin: 0px 7px;
 }
 .about-title  p{
     font-size: 25px;
-    /* font-family: 'Fjalla One', sans-serif; */
-    /* font-family: 'Lobster', cursive; */
-    font-family: 'Antic Slab', serif;
+    font-family:'Antic Slab' , serif;
 }
 .about-title a{
     text-decoration: none;
