@@ -59,7 +59,7 @@ margin: 0px 7px;
         text-align: center;
     }
     .about-content img{
-        border-radius: 50%;
+        clip-path: circle(50% at 50% 50%);
         height: 215px;
         width: 57%;
         display: inline-block;
