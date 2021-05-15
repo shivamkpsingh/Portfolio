@@ -1,28 +1,21 @@
-#education-section{
-    margin-top: 45px;
+#education-section {
+  margin-top: 45px;
 }
-.education-list{
-    margin-top: 20px 0px 10px 0px;
-    display: flex;
-    justify-content:space-around;
-    padding: 20px;
+.education-list {
+  display: flex;
+  justify-content:space-around;
 }
-.education{
-   padding: 20px;
+.education {
+  margin: 20px;
 }
-.education h2{
-    margin: 0px 0px 8px 0px;
+.education h3,
+p {
+  margin-top: 10px;
+  font-size: 1rem;
 }
-.education h3{
-    margin: 0px 0px 8px 0px;
-   
-}
-.education p{
-    margin: 0px 0px 8px 0px;
-}
-@media only screen and (max-width: 576px){
-    .education-list{
-        flex-direction: column;
-        justify-content: center;
-    }
+
+@media only screen and (max-width: 576px) {
+  .education-list {
+    flex-direction: column;
+  }
 }
